@@ -35,7 +35,7 @@ Aplicación web del catálogo de productos de **Mr. Elote**, una tienda de venta
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/TU_USUARIO/mr-elote.git
+git clone https://github.com/AstarothDC/mr-elote
 
 # 2. Entrar a la carpeta
 cd mr-elote
