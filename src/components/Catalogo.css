@@ -1,0 +1,127 @@
+/* =============================================
+   Catalogo.css - Estilos de la sección catálogo
+   Proyecto: Mr. Elote
+   Autor: Dilan Alexander Cabas
+   ============================================= */
+
+.catalogo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+/* ── Encabezado ── */
+.catalogo-encabezado {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.catalogo-titulo {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 900;
+  color: #7d2b00;
+  margin-bottom: 0.5rem;
+}
+
+.catalogo-subtitulo {
+  color: #666;
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Barra de búsqueda ── */
+.catalogo-busqueda-contenedor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.catalogo-busqueda {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.75rem 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+  background: #fafafa;
+}
+
+.catalogo-busqueda:focus {
+  border-color: #c0392b;
+  background: #ffffff;
+}
+
+/* ── Filtros de categoría ── */
+.catalogo-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.filtro-boton {
+  background: #f0f0f0;
+  color: #444;
+  border: 2px solid transparent;
+  padding: 0.45rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filtro-boton:hover {
+  background: #ffe5e5;
+  color: #c0392b;
+}
+
+/* Botón activo: colores Mr. Elote */
+.filtro-boton--activo {
+  background-color: #c0392b;
+  color: #ffffff;
+  border-color: #c0392b;
+}
+
+.filtro-boton--activo:hover {
+  background-color: #a93226;
+  color: #ffffff;
+}
+
+/* ── Contador ── */
+.catalogo-contador {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Cuadrícula de productos ── */
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── Estado vacío ── */
+.catalogo-vacio {
+  text-align: center;
+  padding: 3rem;
+  color: #999;
+}
+
+.catalogo-vacio span {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.catalogo-vacio p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}

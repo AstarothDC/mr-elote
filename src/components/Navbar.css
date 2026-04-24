@@ -1,0 +1,92 @@
+/* =============================================
+   Navbar.css - Estilos de la barra de navegación
+   Proyecto: Mr. Elote
+   Autor: Dilan Alexander Cabas
+   ============================================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c0392b; /* Rojo Mr. Elote */
+  padding: 0 2rem;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Marca / Logo */
+.navbar-marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar-emoji {
+  font-size: 1.8rem;
+}
+
+.navbar-titulo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f9e04b; /* Amarillo maíz */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Menú de enlaces */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #f9e04b; /* Amarillo al hacer hover */
+}
+
+/* Botón hamburguesa (solo visible en móvil) */
+.navbar-hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ── Responsivo ── */
+@media (max-width: 700px) {
+  .navbar-hamburguesa {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: #c0392b;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  .navbar-menu.abierto {
+    display: flex;
+  }
+}

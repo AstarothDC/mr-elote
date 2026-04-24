@@ -1,0 +1,56 @@
+/* =============================================
+   App.css - Estilos globales de Mr. Elote
+   Paleta de colores:
+     Rojo    → #c0392b  (fondo navbar, acento)
+     Amarillo→ #f9e04b  (texto destacado, CTA)
+     Verde   → #2d7a27  (botones de acción)
+     Marrón  → #7d2b00  (títulos y texto principal)
+   Autor: Dilan Alexander Cabas
+   ============================================= */
+
+/* ── Reset básico ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Tipografía y base ── */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background-color: #fdf6ee; /* Fondo crema cálido */
+  color: #333333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Estructura general ── */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* ── Scroll suave para toda la página ── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Imágenes responsivas ── */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Utilidades de accesibilidad ── */
+:focus-visible {
+  outline: 3px solid #f9e04b;
+  outline-offset: 2px;
+}

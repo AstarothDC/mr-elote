@@ -1,0 +1,88 @@
+/* =============================================
+   Hero.css - Estilos del banner principal
+   Proyecto: Mr. Elote
+   Autor: Dilan Alexander Cabas
+   ============================================= */
+
+.hero {
+  background: linear-gradient(135deg, #c0392b 0%, #e74c3c 40%, #f39c12 100%);
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decoración de fondo con emojis */
+.hero::before {
+  content: "🌽🌽🌽🌽🌽🌽🌽🌽🌽🌽🌽🌽";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 3rem;
+  opacity: 0.08;
+  letter-spacing: 20px;
+  white-space: nowrap;
+  transform: rotate(-15deg);
+  pointer-events: none;
+}
+
+.hero-contenido {
+  max-width: 700px;
+  z-index: 1;
+}
+
+.hero-subtitulo {
+  color: #f9e04b; /* Amarillo maíz */
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.hero-titulo {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Resalte en amarillo para la palabra "elotes" */
+.hero-titulo span {
+  color: #f9e04b;
+}
+
+.hero-descripcion {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Botón CTA */
+.hero-boton {
+  background-color: #f9e04b;   /* Amarillo */
+  color: #7d2b00;              /* Marrón oscuro */
+  border: none;
+  padding: 0.9rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-boton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-boton:active {
+  transform: translateY(0);
+}

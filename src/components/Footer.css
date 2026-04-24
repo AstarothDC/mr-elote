@@ -1,0 +1,75 @@
+/* =============================================
+   Footer.css - Estilos del pie de página
+   Proyecto: Mr. Elote
+   Autor: Dilan Alexander Cabas
+   ============================================= */
+
+.footer {
+  background-color: #1a0a00; /* Casi negro con tono cálido */
+  color: #ccc;
+  padding: 3rem 2rem 1rem;
+}
+
+.footer-contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #333;
+}
+
+/* Marca */
+.footer-marca {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-emoji {
+  font-size: 2.2rem;
+}
+
+.footer-marca h3 {
+  color: #f9e04b;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.footer-marca p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Secciones informativas */
+.footer-seccion h4 {
+  color: #f9e04b;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-seccion p {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* Copyright */
+.footer-copy {
+  max-width: 1100px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  font-size: 0.82rem;
+  color: #666;
+}
+
+.footer-dev {
+  margin-top: 0.3rem;
+  color: #f9e04b;
+  opacity: 0.7;
+}

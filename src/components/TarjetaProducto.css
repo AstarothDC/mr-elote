@@ -1,0 +1,117 @@
+/* =============================================
+   TarjetaProducto.css - Estilos de cada tarjeta
+   Proyecto: Mr. Elote
+   Autor: Dilan Alexander Cabas
+   ============================================= */
+
+.tarjeta {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid transparent;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+  border-color: #f9e04b; /* borde amarillo al hover */
+}
+
+/* Tarjeta agotada: apariencia opaca */
+.tarjeta--agotada {
+  opacity: 0.6;
+  filter: grayscale(40%);
+}
+
+/* ── Etiqueta ── */
+.tarjeta-etiqueta {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tarjeta-etiqueta--popular  { background: #c0392b; color: #fff; }
+.tarjeta-etiqueta--nuevo    { background: #27ae60; color: #fff; }
+.tarjeta-etiqueta--especial { background: #8e44ad; color: #fff; }
+.tarjeta-etiqueta--combo    { background: #e67e22; color: #fff; }
+.tarjeta-etiqueta--agotado  { background: #7f8c8d; color: #fff; }
+
+/* ── Emoji ── */
+.tarjeta-emoji {
+  font-size: 3.5rem;
+  margin: 0.5rem 0 1rem;
+  line-height: 1;
+}
+
+/* ── Info ── */
+.tarjeta-info {
+  flex: 1;
+}
+
+.tarjeta-nombre {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #7d2b00; /* Marrón cálido */
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta-descripcion {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* ── Pie ── */
+.tarjeta-pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+  gap: 0.5rem;
+}
+
+.tarjeta-precio {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #c0392b; /* Rojo Mr. Elote */
+}
+
+/* ── Botón ── */
+.tarjeta-boton {
+  background-color: #2d7a27; /* Verde hoja de elote */
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.tarjeta-boton:hover:not(:disabled) {
+  background-color: #1e5c1a;
+}
+
+.tarjeta-boton--agotado {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
