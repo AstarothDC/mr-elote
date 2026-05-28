@@ -89,7 +89,6 @@ mr-elote/
 ## Enlace al repositorio
 
 > 📌 **https://github.com/AstarothDC/mr-elote**  
-> *(Reemplaza TU_USUARIO con tu nombre de usuario de GitHub)*
 
 ---
 
